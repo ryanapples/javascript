@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temporal Dead Zone</title>
+</head>
+<body>
+<script>
+  var pizza = 'Deep Dish 🍕';
+  console.log(pizza); // outputs pizza variable value
+
+  console.log(pizza); // undefined
+  var pizza = 'Deep Dish 🍕';
+
+  console.log(pizza); // not defined; temporal dead zone
+  var pizza = 'Deep Dish 🍕';
+</script>
+</body>
+</html>
