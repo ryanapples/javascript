@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrow Function Intro</title>
+</head>
+<body>
+  <h1>Arrow Function Intro</h1>
+<script>
+  const cities = ['Manila', 'Cebu City', 'Coron', 'Bohol'];
+
+  const vacationStops = cities.map(function(city) {
+    return `${city}, Philippines`;
+  });
+
+  console.log(vacationStops);
+
+  const names = ['Mia', 'Stella', 'Kiki'];
+
+  const fullPetNames = names.map((name) => {
+    return `${name} Apples`;
+  });
+
+  const fullPetNames2 = names.map(name => {
+    return `${name} Apples`;
+  });
+
+  const fullPetNames3 = names.map(name => `${name} Apples`);
+
+  console.log(fullPetNames);
+  console.log(fullPetNames2);
+  console.log(fullPetNames3);
+
+  const sayMyName = (name) => { alert(`Hello ${name}`); }
+
+  sayMyName('Ryan');
+</script>
+</body>
+</html>
