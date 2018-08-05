@@ -28,9 +28,10 @@ accountNumber.endsWith('RT') // false
 accountNumber.endsWith('RT', 11) // true
 
 // .includes()
+flightNumber.includes('AC') // true
+flightNumber.includes('ac') // false
 
 // .repeat()
-
 function leftPad(str, length = 20) {
   return `→ ${' '.repeat(length - str.length)}${str}`;
 }
