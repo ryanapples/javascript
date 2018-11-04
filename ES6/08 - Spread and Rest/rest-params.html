@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The ...Rest Param</title>
+</head>
+<body>
+<script>
+  /*
+  Type of situations to use a rest param:
+  1) Function
+  2) Destructuring 
+  */
+
+  // function convertCurrency(rate, tax, tip, ...amounts) {
+  //   console.log(rate, tax, tip, amounts);
+  //   return amounts.map(amount => amount * rate);
+  // }
+
+  // const amounts = convertCurrency(1.54, 10, 23, 52, 1, 56);
+  // console.log(amounts);
+
+  const runner = ['Kobe', 123, 5.5, 5, 3, 6, 35];
+  const [name, id, ...runs] = runner;
+  console.log(name, id, runs);
+
+  const team = ['Kobe', 'Shaq', 'StephCurry', 'KD', 'Klay'];
+  const [captain, co_captain, ...players] = team;
+  console.log(captain, co_captain, players)
+</script>
+</body>
+</html>
